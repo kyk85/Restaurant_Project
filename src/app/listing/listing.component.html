@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <h2>Our lists of Restaurants</h2>
+  <table class="table table-bordered">
+    <tr class="bg-info">
+      <td>Name</td>
+      <td>Address</td>
+      <td>Rating</td>
+    </tr>
+    <tr *ngFor="let restaurant of restaurants" (click)="moreinfo(restaurant)">
+      <td>{{restaurant.name}}</td>
+      <td>{{restaurant.address}}</td>
+      <td>{{restaurant.reviews.rating}}</td>
+    </tr>
+  </table>
+</div>
+  
+<app-moreinfo [newRestaurant]="selectedRestaurant" *ngIf="selectedRestaurant"></app-moreinfo>

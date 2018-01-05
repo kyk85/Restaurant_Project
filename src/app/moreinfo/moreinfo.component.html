@@ -1,0 +1,72 @@
+<div class="container-fluid" *ngIf="newRestaurant">
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h4 id="restaurantName"></h4>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title alert alert-primary">Rating</h5>
+            <p id="rating" class="card-text">{{newRestaurant.reviews[0].rating}}</p>
+            <!--insert ajax/json data here-->
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title alert alert-primary">Opening Hours</h5>
+            <p id="openingHours" class="card-text">{{newRestaurant.opening[0].days}},{{newRestaurant.opening[0].hours}}</p>
+            <!--insert ajax/json data here-->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title alert alert-primary">Facilities</h5>
+            <p id="facilities" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!--insert ajax/json data here-->
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+          <h5 class="card-title alert alert-primary" id="locMap">Location Map</h5>
+            <div id="map"></div>
+            <!--<script>
+              function initMap() {
+                    var atria = {lat: 3.127159, lng: 101.616616};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 15,
+                      center: atria
+                    });
+                    var marker = new google.maps.Marker({
+                      position: atria,
+                      map: map
+                    });
+                  }
+            </script>-->
+          <!--<img class="card-img-bottom" src="http://via.placeholder.com/400x400">-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <h4 class="card-title alert alert-primary">User Reviews</h4>
+          <p id="userReviews" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

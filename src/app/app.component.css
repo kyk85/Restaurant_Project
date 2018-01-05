@@ -1,0 +1,15 @@
+.card-body {
+	padding:0;
+}
+
+.card-text {
+	padding-left:1rem;
+	padding-right:1rem;
+	padding-bottom:1rem;
+}
+
+ #map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }

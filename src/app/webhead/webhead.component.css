@@ -1,0 +1,9 @@
+.row {
+    width:100%
+}
+
+#webName {
+    text-align:left;
+    padding-top:10px;
+    padding-bottom:10px;
+}
